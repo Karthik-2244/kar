@@ -1,0 +1,69 @@
+#include<stdio.h>
+int main()
+{
+  float x,y,result;
+  printf("enter first number:");
+  scanf("%f",&x);
+  printf("enter secon numbers:");
+  scanf("%f",&y);
+
+  result = x-y;
+  printf("%f", result);
+  
+  return 0;
+nested loop
+#include<stdio.h>
+int main()
+{
+ int i , j;
+ for(i=1;i<=10;i++)
+ {
+   for(j=1;j<=5;j++)
+ {
+     printf("%d " ,j);
+ }
+   printf("\n");
+ }
+ return 0;
+}
+prime number or not
+#include<stdio.h>
+int main()
+{
+    int n , i , count=0;
+    printf("enter a number :");
+    scanf("%d" , &n);
+    for(i=2; i<n; i++)
+  {
+        if(n % i==0)
+    {
+        count++;
+        break;
+    }
+  }
+if(count == 0)
+  printf("%d is a prime number" , n);
+else
+  printf("%d is not a prime number" ,n);
+  return 0;
+ }
+additin of two numbers in functions
+#include<stdio.h>
+int add(int,int);
+int main()
+{
+    int x ,y,z;
+    printf("enter first number :");
+    scanf("%d" , &x);
+    printf("enter second number :");
+    scanf("%d" , &y);
+    z = x+y;
+    printf("%d" , z);
+}
+int add(int a,int b)
+{
+ int c;
+ c=a+b;
+ return c;
+}
+
